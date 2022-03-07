@@ -22,7 +22,6 @@
         Part 3.9: Use tokenize function to split pipe_segments into cmd_segments
         Part 3.10: Run execvp with the correct cmd_segments
     Part 4: Parent waits for child created at Part 3 *end of function*
-    
 
  */
 
@@ -42,21 +41,17 @@
 // Assume that each segment has at most 256 characters (including NULL)
 #define MAX_SEGMENT_LENGTH 256
 
-// This function will be invoked by main()
-// TODO: Implement the multi-level pipes below
+
 void process_cmd(char* cmdline);
 
-// This function will be invoked by main()
-// TODO: Modify the show_prompt function  
+
 void show_prompt();
 
 
-// This function will be invoked by main()
-// The implementation is given
+
 int get_cmd_line(char* cmdline);
 
-// tokenize function is given
-// This function helps you parse the command line
+// This function parses the command line
 //
 // Suppose the following variables are defined:
 //
@@ -90,8 +85,6 @@ int main()
 
 void process_cmd(char* cmdline)
 {
-    // TODO: write down your code for process_cmd
-    //printf("Debug: %s\n", cmdline);
     if (strcmp(cmdline, "exit") == 0) {
         int z = getpid();
         printf("The shell program (pid=%d) terminates\n", z);
@@ -181,8 +174,7 @@ void process_cmd(char* cmdline)
 
 void show_prompt()
 {
-    // TODO: update the shell prompt using your ITSC email (without @connect.ust.hk)
-    printf("$hlatong> ");
+    printf("$AlanHLTong> ");
 }
 
 int get_cmd_line(char* cmdline)
