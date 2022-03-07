@@ -1,8 +1,7 @@
 # LinuxShell
 
 
-
-Implementation of process_cmd
+Implementation of process_cmd (Read in raw format)
 Part 1: Check if cmdline is exit, if it is print The shell program terminates and exit(0)
 Part 2: Create 2 variables and use tokenize function to split cmdline into pipe_segments
 Part 3: Create a child process (everything is a child is listed as 3.x)
