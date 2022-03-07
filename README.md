@@ -3,7 +3,6 @@
 
 
 Implementation of process_cmd
-
 Part 1: Check if cmdline is exit, if it is print The shell program terminates and exit(0)
 Part 2: Create 2 variables and use tokenize function to split cmdline into pipe_segments
 Part 3: Create a child process (everything is a child is listed as 3.x)
@@ -24,4 +23,5 @@ Part 3: Create a child process (everything is a child is listed as 3.x)
     Part 3.8: Use a foorloop to change all blank characters in pipe_segments into space character so tokenize will work
     Part 3.9: Use tokenize function to split pipe_segments into cmd_segments
     Part 3.10: Run execvp with the correct cmd_segments
-Part 4: Parent waits for child created at Part 3 *end of function*
+Part 4: Parent waits for child created at Part 3 
+End of function
