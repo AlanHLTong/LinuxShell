@@ -1,4 +1,4 @@
-# LinuxShell
+# Linux Shell
 
 
 Implementation of process_cmd (Read in raw format)
